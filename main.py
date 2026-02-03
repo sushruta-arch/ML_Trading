@@ -29,7 +29,7 @@ class CryptoDataProvider:
     
     @staticmethod
     def fetch_from_binance_public(symbol='BTCUSDT', days=3650):
-        print(f"\n📡 Fetching {symbol}...")
+        print(f"\nFetching {symbol}...")
         url = "https://api.binance.com/api/v3/klines"
         end_time = int(time.time() * 1000)
         start_time = end_time - (days * 24 * 60 * 60 * 1000)
